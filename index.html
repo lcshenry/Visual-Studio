@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia Online</title>
+    <style>
+        body{
+         background-color: lightgray;
+         max-width: 800px;
+         margin: auto;
+        }
+
+        header{
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: row;
+            margin-left: 10px;
+            gap: 60px;
+            justify-content: left;
+        }
+        .favicon ul li{
+            list-style: none;
+        }
+        .favicon ul li a{
+            text-decoration: none;
+        }
+        .favicon ul{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .favicon ul li a:hover{
+            background-color: black;
+            color: white;
+        }
+        .menu ul{
+        display: flex;
+        gap: 15px;
+        list-style: none;
+       
+        }
+       
+        .menu ul li a{
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+            font-weight: bold;
+            font-family: Arial;
+        }
+        .top{
+           background-image: url("https://img.freepik.com/fotos-premium/foto-do-banner-de-uma-mulher-sorridente-que-aponta-para-longe-em-alguns-anuncios-e-olha-para-a-camera_283617-6086.jpg?w=900");   
+           width: auto;
+           height: 370px; 
+            margin: auto;
+            border-bottom: 1px solid #b17214;
+        }
+        .menu{
+       background-color: rgba(255, 255, 255, 0.452);
+       margin: 0px;
+       width: 900px;
+       
+        }
+        .menu ul li a:hover{
+            border-radius: 0.50rem;
+            color: white;
+            background-color: black;
+        }
+       
+        .headertwo{
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+        }
+        .headertree{
+            display: flex;
+            flex-direction: column;
+        }
+        .headertree ul li{
+            margin: 10px;
+        }
+        .headertree ul li button{
+            width: 110px;
+            height: 25px;
+            color: white;
+            background-color: rgb(212, 153, 25);
+            border-radius: 1rem;
+            border: 1px solid black;
+            margin: 5px;
+            font-size: 0.600rem;
+        }
+        .headertree ul li button:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        main{
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+            background-color: rgba(255, 255, 255, 0.726);
+        }
+        
+        .content h1{
+            font-size: 1rem;
+          
+        }
+       .main, content{
+            justify-content: center;
+        }
+        .content ul li{
+            margin: 17px;
+        }
+        aside{
+            background-image: url('https://preview.colorlib.com/theme/academia/images/bg_3.jpg');
+            max-width: 900px;
+            background-size: 800px;
+            height: 300px;
+            margin-top: 4px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,150px);
+            grid-template-areas: "txt1 txt1 txt2 txt2"
+            "txt3 txt3 txt4 txt4";
+            
+        }
+        .txt1{
+            grid-area: txt1;
+           text-align: center;
+          align-self: center;
+          font-weight: bold;
+          font-family: Roboto;
+        }
+        .txt2{
+            grid-area: txt2;
+            text-align: center;
+            align-self: center;
+            font-weight: bold;
+            font-family: Roboto;
+        }
+        .txt3{
+            grid-area: txt3;
+            text-align: center;
+            align-self: center;
+            font-weight: bold;
+            font-family: Roboto;
+        }
+        .txt4{
+            grid-area: txt4;
+            text-align: center;
+            align-self: center;
+            font-weight: bold;
+            font-family: Roboto;
+        }
+        footer{
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.726);
+            padding: 20px;
+            font-size: 0.800rem;
+        }
+        footer a {
+            text-decoration: none;
+            color: black;
+           
+        }
+              
+    </style>
+</head>
+<body>
+    <section class="top">
+    <header class="header">
+        <h2> Academia Online </h2>
+        <p> Segunda - Sexta <br> 8:00 AM - 8:00 PM</p>
+        <p> Ligue para: <br> (21) 0000-0000</p>
+        <section class="favicon">
+            <ul>
+                <li> <a href="#">FC</a> </li>
+                 <li><a href="#">FC</a></li>
+                 <li> <a href="#">FC</a> </li>
+                 <li><a href="#">FC</a></li>
+            </ul>
+        </section>
+    </header>
+    <header class="headertwo">
+        <section class="menu">
+            <nav>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Time</a></li>
+                    <li><a href="">Preços</a></li>
+                    <li><a href="">Jornal</a></li>
+                    <li><a href="">Contato</a></li>
+                    
+                </ul>
+            </nav>
+            </section>
+    </header>
+    <header class="headertree">
+       <ul>
+        <li>Bem vindo a academia</li>
+        <li>Melhor centro de estudos</li>
+        <li>Venha conhecer nosso centro, que alem <br> das montanhas é top demais!</li>
+        <li><button>Comece agora!</button><button>Ver curso</button></li>
+       </ul>
+    </header>
+    </section>
+    <main class="main">
+        <section class="mainpicture">
+            <img width="300" src="https://renatabringel.com.br/wp-content/uploads/2021/03/foto_sorrindo-_fundo_transparente-1.png";/>
+        </section>
+        <section class="content">
+            <h1> Beneficios do nosso curso:</h1>
+            <ul>
+                <li>Curso online:</li>
+                <li>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</li>
+                <li>Receber um certificado:</li>
+                <li>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</li>
+                <li>Aprender com os experientes:</li>
+                <li>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</li>
+            </ul>
+        </section>
+    </main>
+    <aside class="aside">
+        
+        <section class="txt1">
+            3,000 - Success Stories </section>
+
+        <section class="txt2">
+            1,000 - Schedules </section>
+
+        <section class="txt3">
+            320 - Trusted Tutors </section>
+
+        <section class="txt4">
+            587 - Courses </section>
+    </aside>
+    <footer class="footer">
+    <p align="center"> Criado por: <a href="https://www.linkedin.com/in/lucas-henrique-1bb043193/">Lucas Henrique</a></p>
+    </footer>
+</body>
+</html>
