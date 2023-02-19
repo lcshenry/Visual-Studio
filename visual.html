@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <b:include data='blog' name='all-head-content'/>
+    <style>
+        body{
+            background-color: aliceblue;
+            max-width: 1100px;
+            margin: auto;
+        }
+     
+        header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap:10px;
+            margin:0px;
+            padding: 1.5px;
+            justify-content: space-around;
+            background-color: rgba(10, 7, 7, 0.377);
+        }
+        header nav ul{
+            gap: 20px;
+            display: flex;
+            
+            
+        }
+        header nav ul li{
+            list-style: none;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header nav ul li a:hover{
+            background-color: white;
+            padding: 10px;
+            font-weight: bold;
+        }
+        header nav ul li a img{
+            background-color: aliceblue;
+            border-radius: 1rem;
+            padding: 0.250rem;
+        }
+        header nav ul{
+            justify-content: space-between;
+        }
+        header form input{
+            width: 300px;
+          color: black;
+          font-weight: bold;
+          text-align: center;
+          font-family: 'Courier New', Courier, monospace;
+        
+        }
+        .top-page{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,150px);
+            grid-template-areas:
+             "temp1 temp2 temp3 temp4"
+             "temp1 temp5 temp6 temp7"
+             ;
+            margin-top: 3px;
+            margin-bottom: 7px;
+            max-width: 1100px;
+            height: 300px;
+            gap: 2px;
+
+        }
+        .temp1{
+            grid-area: temp1;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }
+        .temp2{
+            grid-area: temp2;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }
+        .temp3{
+            grid-area: temp3;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }
+        .temp4{
+            grid-area: temp4;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }       
+        .temp5{
+            grid-area: temp5;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }       
+        .temp6{
+            grid-area: temp6;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }       
+        .temp7{
+            grid-area: temp7;
+            border: 1px solid gray;
+            background-color: #9A9EA2;
+        }
+        .content{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,300px);
+            grid-template-areas: "main main main aside"
+            "main main main aside";
+            margin-top: 5px;
+            gap: 5px;
+        }
+        .main{
+            grid-area: main;
+            border: 1px solid gray;
+            background-color: white;
+        }
+
+        .aside{
+            grid-area: aside;
+            border: 1px solid gray;
+            background-color: white;
+        }
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,100px);
+            grid-template-areas: "footer footer footer footer";
+            border: 1px solid gray;
+            margin-top: 5px;
+        }
+        .foot{
+            grid-area: footer;
+            background-color: #9A9EA2;
+        }
+        .top-main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,40px);
+            grid-template-areas: "top-main top-main top-main top-main";
+            border: 1px solid gray;
+            margin-top: 3px;
+            align-items: center;
+            justify-content: space-around;
+            
+        }
+        .top-main h1{
+            margin-left: 10px;    
+            
+        }
+        .top-main form input{
+            width: 190px;
+            
+        }
+        .top-main ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        .top-main ul li{
+            list-style: none;
+        }
+        .top-main ul{
+            display: flex;
+            gap: 15px;
+        }
+               
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li class="logo"><a href="">Inicio</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Emails</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section class="top-main">
+    <h1> TEMPLATE</h1>
+    <form>
+        <input type="search" autocomplete="on" placeholder="pesquisar"/>
+        <button type="submit">Enviar</button>
+    </form>
+    <ul>
+        <li>Social Media:</li>
+        <li><a href="facebook.com">facebook</a></li>
+        <li><a href="instagram.com">instagram</a></li>
+    </ul>
+    </section>
+    <section class="top-page">
+        <section class="temp1">A</section>
+        <section class="temp2">B</section>
+        <section class="temp3">C</section>
+        <section class="temp4">D</section>
+        <section class="temp5">E</section>
+        <section class="temp6">F</section>
+        <section class="temp7">G</section>
+    </section>
+    <section class="content">
+        <main class="main">Teste</main>
+        <aside class="aside">Teste</aside>
+    </section>
+    <section class="footer">
+        <footer class="foot">
+            teste
+        </footer>
+    </section>
+</body>
+</html>
